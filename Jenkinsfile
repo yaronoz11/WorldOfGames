@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         // Docker image name on DockerHub
-        DOCKER_IMAGE = 'amitgrin/world-of-games'
+        DOCKER_IMAGE = 'yaronoz11/WorldOfGames'
         DOCKER_TAG = 'latest'  // You can use a specific version or date here
     }
 
@@ -13,7 +13,7 @@ pipeline {
                 script {
                     // Checkout the code from the repository
                     echo 'Checking out repository...'
-                    git branch: 'main', url: 'https://github.com/Grinberg-stack/World-Of-Games.git'  // Replace with your GitHub repository URL
+                    git branch: 'main', url: 'https://github.com/yaronoz11/WorldOfGames'  // Replace with your GitHub repository URL
                 }
             }
         }
